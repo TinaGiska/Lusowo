@@ -37,6 +37,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,secti
 .img-responsive{
     max-width:100%;
     height:auto;
+    width: 100%;
     display:block
 }
 .visible-xs,.visible-sm,.visible-md,.visible-lg{
@@ -992,7 +993,7 @@ a:hover,a:focus{
     -webkit-transition:all .3s ease;
     transition:all .3s ease;
     text-decoration:none;
-    color:#80a53f
+    color:#D4AF37
 }
 header a{
     color:#fff;
@@ -1044,7 +1045,7 @@ header a:hover,header a:focus{
     color:gray
 }
 .table a:hover,.table a:focus{
-    color:#80a53f
+    color:#D4AF37
 }
 a.file{
     display:block;
@@ -1130,7 +1131,8 @@ section ul li,.list ul li{
     }
 }
 header{
-    background:url(//zaciszedrwesa.pl/wp-content/themes/zaciszedrwesa/css/../img/background.jpg) no-repeat bottom center;
+    background:url(../images/osada-lusowo-21-front.jpg) no-repeat top center;
+    background-size: 100%;
     position:relative;
     color:#fff
 }
@@ -1140,7 +1142,7 @@ header{
     }
 }
 header .header__inner{
-    background:#80a53f;
+    background:#D4AF37;
     position:absolute;
     top:0;
     left:0;
@@ -1227,7 +1229,7 @@ header .header__logo img{
     -o-transition:all .3s ease;
     -webkit-transition:all .3s ease;
     transition:all .3s ease;
-    color:#80a53f
+    color:#D4AF37
 }
 .menu__button__scroll #nav-icon.open:before{
     -moz-transition:all .3s ease;
@@ -1262,7 +1264,7 @@ header .header__logo img{
     transition:.25s ease-in-out
 }
 .menu__button__scroll #nav-icon span{
-    background:#80a53f;
+    background:#D4AF37;
     -moz-transition:all .3s ease;
     -o-transition:all .3s ease;
     -webkit-transition:all .3s ease;
@@ -1318,8 +1320,35 @@ header .header__logo img{
     -o-transition:all .3s ease;
     -webkit-transition:all .3s ease;
     transition:all .3s ease;
-    z-index:1000
+    z-index:1000;
+    display: none;
 }
+
+.menu-top-desktop {
+  position: sticky;
+  position: -webkit-sticky;
+  background-color: rgba(212,175,55, 0.8);
+  top: 0; /* required */
+  text-align: center;
+  z-index: 99;
+}
+.menu-top-desktop div a {
+  color: #fff;
+  padding: 15px;
+}
+.menu-top-desktop div a:hover {
+  color: rgba(255,255,255, 0.7)
+}
+.menu-top-desktop div {
+  padding:15px;
+}
+
+@media(max-width:767px){
+    .menu-top-desktop{
+        display: none;
+    }
+}
+
 @media(min-width:992px) and (max-width:1199px){
     .menu__button{
         width:940px
@@ -1332,7 +1361,8 @@ header .header__logo img{
 }
 @media(max-width:767px){
     .menu__button{
-        width:95%
+        width:95%;
+        display: block;
     }
 }
 .menu__button.menu__button--open{
@@ -1341,8 +1371,7 @@ header .header__logo img{
 .menu{
     width:100%;
     height:100%;
-    background:#80a53f;
-    background:rgba(128,165,69,0.9);
+    background:rgba(212,175,55, 0.9);
     position:fixed;
     top:-100%;
     left:0;
@@ -1523,7 +1552,7 @@ header .header__logo img{
 }
 .keywords .keywords__title{
     font-weight:700;
-    color:#80a53f;
+    color:#D4AF37;
     font-size:18pt
 }
 @media(min-width:768px) and (max-width:991px){
@@ -1668,7 +1697,7 @@ header .header__logo img{
     }
 }
 .choose .table .table__row .table__row__item .available{
-    color:#80a53f;
+    color:#D4AF37;
     font-weight:700
 }
 .choose .table .table__row .table__row__item .sold{
@@ -1722,8 +1751,8 @@ header .header__logo img{
     }
 }
 .tabs-nav .tabs-nav__item--active{
-    color:#80a53f;
-    border:2px solid #80a53f;
+    color:#D4AF37;
+    border:2px solid #D4AF37;
     -moz-transition:all .3s ease;
     -o-transition:all .3s ease;
     -webkit-transition:all .3s ease;
@@ -1766,7 +1795,7 @@ header .header__logo img{
 .banner2 .banner2__bg{
     width:100%;
     height:100%;
-    background:#80a53f;
+    background:#D4AF37;
     filter:alpha(opacity=70);
     opacity:.7;
     position:absolute;

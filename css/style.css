@@ -1076,6 +1076,10 @@ h1.logo{
     display:inline-block;
     line-height:1
 }
+
+.logo img {
+    margin: auto;
+}
 h2{
     font-size:28pt;
     line-height:1.4;
@@ -1320,12 +1324,10 @@ header .header__logo img{
 }
 
 .arrow-wrap {
-  position:absolute;
+  position:relative;
   z-index:1;
   left:50%;
-  top:-5em;
   margin-left:-5em;
-  background:#6699FF;
   width:10em;
   height:10em;
   padding:4em 2em;
@@ -1354,7 +1356,7 @@ header .header__logo img{
   height: 0px;
   border-style: solid;
   border-width: 3em 3em 0 3em;
-  border-color: #99CCFF transparent transparent transparent;
+  border-color: rgba(212,175,55, 0.8) transparent transparent transparent;
   -webkit-transform:rotate(360deg)
 }
 
